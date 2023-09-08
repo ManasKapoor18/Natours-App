@@ -1,17 +1,18 @@
 /* eslint-disable */
+
 export const displayMap = locations => {
   mapboxgl.accessToken =
     'pk.eyJ1IjoibWFuYXMwOTciLCJhIjoiY2xsbzI2enByMDc0OTNwbW80enFzam81eiJ9.Cft12tdg1wXHpTA6vJblJA';
 
   var map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/manas097/cllo2bu68002r01r4cphphu6k',
+    style: 'mapbox://styles/mapbox/streets-v11',
     scrollZoom: false
     // center: [-118.113491, 34.111745],
-    // zoom: 10,
+    // zoom: 10
     // interactive: false
   });
-
+  console.log('map');
   const bounds = new mapboxgl.LngLatBounds();
 
   locations.forEach(loc => {

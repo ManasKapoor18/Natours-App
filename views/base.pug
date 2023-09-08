@@ -7,6 +7,7 @@ html
       link(rel='stylesheet' href='/css/style.css')
       link(rel='shortcut icon' type='image/png' href='/img/favicon.png')
       link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato:300,300i,700')
+      script(src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js')
       title Natours | #{title}
   
   body
@@ -21,6 +22,6 @@ html
     include _footer
     
     //- script(src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js')
-    script(src='/js/mapbox.js')
+    //- script(src='/js/mapbox.js')
     //- script(src='/js/login.js')
-    //- script(src='/js/bundle.js')
+    script(src='/js/bundle.js')
